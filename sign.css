@@ -1,0 +1,67 @@
+body {
+
+margin: 0;
+padding: 0;
+background-color: #660099;
+background: url(gin.jpg);
+
+}
+
+.createbox
+{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    width: 550px;
+    height: 880px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+padding: 70px 30px;
+margin: 30px;
+color: #660099;
+
+}
+.aa
+{
+	font-weight: bold;
+	color: #fff;
+}
+
+.createbox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+	font-family: 'Indie Flower' ,cursive;
+}
+.createbox input[type="text"],input[type="password"]
+{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+	font-family: 'Indie Flower' ,cursive;
+
+}
+.createbox input[type="submit"]
+{
+	border:none;
+	outline: none;
+	height: 40px;
+	background:#555;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+	font-family: 'Indie Flower' ,cursive;
+	font-weight: bold;
+}
+
+.header
+{
+padding: 0;
+margin: 1px;
+
+}

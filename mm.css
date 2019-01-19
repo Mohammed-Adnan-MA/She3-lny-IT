@@ -1,0 +1,294 @@
+body{
+
+ margin: 0;
+ padding: 0;
+
+
+}
+
+.list{
+  max-width: 1140px;
+  margin:0 auto;
+
+}
+.ul{
+
+  list-style:none; 
+  float: right;
+  margin-top: 10px;
+
+}
+.ul li
+{
+display: inline-block;
+
+margin-left: 20px;
+}
+.ul li a
+{
+
+  color:#692b81  ;
+ 
+  text-decoration: none;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+.ul li a:hover
+{
+  color: #FDAB00;
+border-bottom: 2px solid #FDAB00 ;
+transition:all 0.5s ease-in;
+padding:15px 0; }
+
+#wrapper{
+  position: relative;
+  width:100%;
+  min-height:55vw;
+  overflow: hidden;
+}
+.layer{
+  position: absolute;
+  width:100vw;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer .content-wrap{
+  position: absolute;
+  width:100vw;
+  min-height: 55vw;
+}
+
+.layer .content-body{
+  width:25%;
+  position:absolute;
+  top:50%;
+  text-align: center;
+  transform:translateY(-50%);
+  color:#fff;
+}
+
+.bottom{
+  background:#692c84 ;
+  z-index:1;
+}
+
+.bottom .content-body{
+  right:5%;
+}
+
+.bottom h1{
+  color:#FDAB00;
+}
+
+.top{
+  background:#eee;
+  color:#222;
+  z-index:2;
+  width:50vw;
+}
+
+.top .content-body{
+  left: 5%;
+  color:#222;
+}
+
+.handle{
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #FDAB00;
+  width:5px;
+  top:0;
+  left: 50%;
+  z-index:3;
+}
+
+.skewed .handle{
+  top:50%;
+  transform:rotate(30deg) translateY(-50%);
+  height: 200%;
+  transform-origin:top;
+}
+
+.skewed .top{
+  transform: skew(-30deg);
+  margin-left:-1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap{
+  transform: skew(30deg);
+  margin-left:1000px;
+}
+
+@media(max-width:768px){
+  body{
+    font-size:75%;
+ }
+}
+.button{ 
+background-color: white;
+}
+.a 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing:border-box;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius:30px;
+}
+ a:hover
+{
+  animation: animate 8s linear infinite ;
+}
+
+@keyframes animate 
+{
+
+  0%
+  {
+    background-position: 0% ;
+
+  }
+    100%
+  {
+    background-position: 400% ;
+
+  }
+}
+a:before
+  {
+content: '';
+position: absolute;
+top: -5px;
+left: -5px;
+right: -5px;
+bottom: -5px;
+z-index: -1;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius:40px;
+    filter:blur(20px);
+    opacity: 0;
+    transition:0.5s;
+
+}
+ a:hover:before
+{
+    filter:blur(20px);
+        opacity: 1;
+          animation: animate 8s linear infinite ;
+}
+.shadow
+{
+  position: relative;
+  margin: 200px auto 0;
+  width: 400px;
+  height: 250px;
+  background:linear-gradient(0deg,#692c84,#262626);
+  border-radius: 12%;
+
+}
+.shadow:before,
+.shadow:after
+  {
+content: '';
+position: absolute;
+top: -5px;
+left: -5px;
+right: -5px;
+bottom: -5px;
+z-index: -1;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius:40px;
+    filter:blur(20px);
+    opacity: 0;
+    transition:0.5s;
+}
+.shadow:after
+{
+  filter:blur(20px);
+  
+    opacity: 1;
+          animation: animate 8s linear infinite ;
+}
+.shadow h1
+{  font-size:600%;
+  text-align: center;
+  top: 50%;
+  font-family: Tahoma;
+
+
+}
+.content-body h2
+{
+  color: #FDAB00;
+
+}
+
+
+@keyframes animate
+{
+  0%{
+    background-position: 0 0;
+  }
+
+    50%{
+    background-position: 300% 0;
+  }
+
+  100%{
+    background-position: 0 0;
+  }
+}
+
+
+footer
+
+{
+    background: #eee;
+    background-size:cover;
+    background-attachment: fixed;
+padding-top: 90px;
+padding-bottom: 90px;
+text-align: center;
+} 
+.container a 
+{
+margin: 0 16px  20px  16px;
+display: inline-block
+
+}
+.container  .fa
+{
+font-size: 30px;
+color: #692b81 ;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+background: white;
+line-height: 2.5;
+transition:  0.3s;
+border: 10px solid  #FDAB00 ;
+text-align: center;
+
+ }
+.container  a:hover .fa
+{ 
+ border: 10px  solid white ;
+}

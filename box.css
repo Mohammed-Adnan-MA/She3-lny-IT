@@ -1,0 +1,61 @@
+body{
+
+margin: 0;
+padding: 0;
+background-color:#ffccff;
+text-align: center;
+background: url(bg-01.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+.a p
+{
+	margin: 5PX;
+	padding: 0;
+	font-weight: bold;
+	font-family: 'Indie Flower' ,cursive;
+}
+.a input[type="text"]
+{
+	border:none;
+	border-bottom: 2px solid #000;
+	background: transparent;
+	outline: none;
+	height: 50px;
+	color: #000;
+	font-size: 19px;
+	font-family: 'Indie Flower' ,cursive;
+	width: 400PX;
+
+}
+	.b {
+
+
+		font-size: 40px;
+		font-style: oblique;
+
+	}
+
+	.a input[type="submit"]
+{
+	border:none;
+	outline: none;
+	height: 40px;
+	background:#ffccff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+	font-family: 'Indie Flower' ,cursive;
+	font-weight: bold;
+	width: 400PX;
+}
+.a input[type="submit"] :hover
+
+{
+	cursor: pointer;
+	background: #000;
+	color: #660099;
+}
